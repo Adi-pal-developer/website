@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+          margin-left: 60px;
+           font-size: 50px;
+            padding: 30px;
+            color: white;
+            text-transform: uppercase;
+        }
+        button{
+            padding: 30px;
+            border: none;
+           font-family:  'Times New Roman';
+           border-radius: 20px;
+           font-size: 25px;
+           font-weight: bold;
+         
+        }
+        #btn1{
+           position: absolute;
+           left: 300px;
+           top:350px;
+        }
+        #btn2{
+          position: absolute;
+          left:950px;
+          top: 350px;
+        }
+    
+  body{
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    </style>
+</head>
+<body>
+    <h1> Which is the best IT Training Center in India ?</h1>
+   <a href="https://www.livetechskills.com/">
+    <button on id="btn1" onclick="Choice()"> 	&#128640 Livetechskills</button></a> 
+    
+    <button id="btn2" class="btn"> &#128640 Another Institute</button>
+    <script>
+         const btn = document.querySelector('.btn');
+        btn.addEventListener('mouseover',Move)
+       function Move(){
+
+        const btn = document.querySelector('.btn');
+        
+        var a=Math.floor(Math.random() * 550) + "px"
+        var b=Math.floor(Math.random() * 550) + "px"
+     
+        btn.style.left=a;
+        btn.style.top=b;
+       }
+       
+    </script>
+</body>
+</html>
